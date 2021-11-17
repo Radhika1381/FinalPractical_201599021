@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link style="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <title>JOBCLUES</title>
+    
+</head>
+<body>
+    <style>
+        
+        * {padding: 0;margin: 0;box-sizing: border-box; font-family: Arial, Helvetica, sans-serif;}
+        html {
+          scroll-padding-top: 70px;
+          scroll-behavior: smooth;
+        }
+    
+        #container {
+          width: 100%;
+          max-width: 1200px;
+        
+        }
+        #header {
+          background:linear-gradient(to right,#6db9ef,#7ce08a);
+          width: 100%;
+          height: 70px;
+          max-width: 1550px;
+          position: fixed;
+          top: 0;
+          height: 70px;
+        }
+        
+    
+        /* Navigation Menu  */
+        .menu {
+          list-style: none;
+          padding: 0 5px;
+        }
+    
+        .menu li {
+          display: inline-block;
+          line-height: 70px;
+          float:right;
+    
+         
+        }
+        .menu h1{
+            color: white;
+            float: left;
+            margin-top: 20px;
+            font-size: 26px;
+            margin-left: 20px;
+            font-family:Arial, Helvetica, sans-serif;
+            
+        }
+
+    
+        .menu li a {
+          transition: 0.4s;
+          display: block;
+          text-decoration: none;
+          color: white;
+          padding: 0px 20px;
+          font-size: 20px;
+          text-transform: uppercase;
+        }
+    
+        .menu li a:hover {
+          color: black;
+          background-color: white;
+        }
+        .bg{
+            height: 80vh;
+            background-image:url(./images/image1.jpeg);
+            margin-top: 7%;
+            width: 1550px;
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+        .bg h1{
+            padding-top: 170px;
+            font-size: 50px;
+            letter-spacing: 6px;
+            font-weight: 6000;
+            text-align: center;
+            text-shadow: 0 0 30px rgba(0, 0,0,0.5);
+        }
+        .bg p{
+            text-align: center;
+        }
+        .search{
+            padding: 20px 0px;
+            padding-left: 100px;
+            margin: -4% 10% 50% 10%;
+            background:linear-gradient(to right,#6db9ef,#7ce08a);
+            margin-left: 300px;
+            width: 90%;
+        }
+        .search .text{
+            max-width: 250px;
+            display: inline-flex;
+            margin:10px 5px;
+            border-radius: 0;
+            border:none;
+            padding:10px;
+            margin: 20px;
+        }
+        .search .button{
+            border-radius: 0%;
+            border: none;
+            display: inline-flex;
+            margin:5px;
+            padding:10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: lightseagreen;
+            color: white;
+
+        }
+        
+        
+           
+    
+       
+    
+       
+        @media (min-width: 801px) and (max-width: 1199px) {
+          .menu {
+            list-style: none;
+            float: right;
+          }
+    
+          .menu li {
+            line-height: 70px;
+            display: inline-block;
+          }
+    
+          .menu li a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            padding: 0px 20px;
+            font-size: 20px;
+            text-transform: uppercase;
+          }
+    
+          .menu li a:hover {
+            color: black;
+            background-color: white;
+          }
+    
+          html {
+            scroll-padding-top: 70px;
+            scroll-behavior: smooth;
+          }
+    
+          #container {
+            width: 100%;
+          }
+          }
+    
+          /* ------Header Container-------- */
+    
+          #header {
+            width: 100%;
+            background-color: grey;
+            position: fixed;
+            top: 0;
+            height: 70px;
+          }
+    
+         
+    
+      </style>
+    </head>
+    
+    <body>
+      <div id="container">
+        <div id="header">
+          <ul class="menu">
+           <a><i class="fad fa-hand-peace"></i><h1>JOBCLUES</h1></a>
+            <li><a href="#">INTERNSHIP</a></li>
+            <li><a href="#">GOVT. JOBS</a></li>
+            <li><a href="#">WALK-IN</a></li>
+            <li><a href="#">COMPANIES</a></li>
+            <li><a href="#">ALL JOBS</a></li>       
+      </ul>
+        </div>
+        <section>
+            <div class="bg">
+                <h1>JOBS AROUND YOU</h1>
+                <p>Subscribe Easy Tutorials Youtube Channel</p>
+            </div>
+        </section>
+        <div class="search">
+            <input type="text" id=1  class="text" placeholder="Search keywords">
+            <input type="text" id=2 class="text" placeholder="Company">
+            <input type="text" id=3 class="text" placeholder="Location">
+            <input type="button" id=1 class="button" value="Find Job">
+
+        </div>
+      </div>
+    </body>
+    </html>
